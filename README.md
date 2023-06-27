@@ -2,7 +2,7 @@
 ## Proyecto Integrador
 ## Proyecto Integrador - Tercer Semestre  
 
-![Imagen representativa del trabajo del grupo](https://1drv.ms/i/s!Au1TkkGLK3vPgcVB1fYKrvyvALydHg?e=OlcHub)
+![Imagen representativa del trabajo del grupo](C:\Users\gonxa\OneDrive\Imágenes\DB47_Mitek-1068x668.jpg)
 
 
 #### **Integrantes**:
