@@ -2,7 +2,7 @@
 ## Proyecto Integrador
 ## Proyecto Integrador - Tercer Semestre  
 
-![Screenshot_2](https://www.digitalbizmagazine.com/inteligencia-artificial-y-seres-humanos/)
+![Screenshot_2](https://www.digitalbizmagazine.com/wp-content/uploads/2022/01/DB47_Mitek.jpg)
 
 
 #### **Integrantes**:
