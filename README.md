@@ -15,7 +15,7 @@
 - Agustín Aranda
 - Leonardo Valdéz
 
-### *Descripción general del proyecto*:
+###                       *Descripción general del proyecto*:
 
 El proyecto consiste en el desarrollo de una aplicación web diseñada para ser utilizada en un centro de salud. Su objetivo principal es facilitar el registro de pacientes vacunados contra el COVID-19, utilizando los diferentes tipos de vacunas disponibles en Argentina.
 
@@ -27,4 +27,4 @@ Además, se utilizó Docker para la creación de una imagen virtual de la aplica
 
 Este proyecto representa una solución integral para el registro de pacientes vacunados en un centro de salud, utilizando tecnologías web modernas, una base de datos PostgreSQL y herramientas como Flask, Docker y Google Cloud para su implementación y despliegue.
 
-![Screenshot_2](C:\Users\gonxa\Downloads\Experiencias-y-estrategias_COVID-19.jpg)
+![Screenshot_2](https://media.ambito.com/p/a747977879f6f1b4b82065603f87fb57/adjuntos/239/imagenes/040/401/0040401067/1200x675/smart/covid-argjpg.jpg)
