@@ -1,7 +1,7 @@
 # *Equipo Los Chiperos - Tecnicatura Universitaria en Programación*
 ## Proyecto Integrador - Tercer Semestre  
 
-![Screenshot_2](https://www.digitalbizmagazine.com/wp-content/uploads/2022/01/DB47_Mitek.jpg)
+![Screenshot_1](https://www.digitalbizmagazine.com/wp-content/uploads/2022/01/DB47_Mitek.jpg)
 
 
 #### **Integrantes**:
@@ -26,3 +26,5 @@ En cuanto a la interfaz de usuario, se emplearon tecnologías web estándar como
 Además, se utilizó Docker para la creación de una imagen virtual de la aplicación. Esto facilita su despliegue y ejecución en entornos de producción, garantizando una mayor portabilidad y escalabilidad. La imagen virtual de la aplicación se ha desplegado específicamente en Google Cloud, lo que permite su acceso y utilización desde cualquier ubicación.
 
 Este proyecto representa una solución integral para el registro de pacientes vacunados en un centro de salud, utilizando tecnologías web modernas, una base de datos PostgreSQL y herramientas como Flask, Docker y Google Cloud para su implementación y despliegue.
+
+![Screenshot_2](C:\Users\gonxa\Downloads\Experiencias-y-estrategias_COVID-19.jpg)
