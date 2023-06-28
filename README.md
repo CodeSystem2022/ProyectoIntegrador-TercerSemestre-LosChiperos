@@ -25,6 +25,6 @@ En cuanto a la interfaz de usuario, se emplearon tecnologías web estándar como
 
 Además, se utilizó Docker para la creación de una imagen virtual de la aplicación. Esto facilita su despliegue y ejecución en entornos de producción, garantizando una mayor portabilidad y escalabilidad. La imagen virtual de la aplicación se ha desplegado específicamente en Google Cloud, lo que permite su acceso y utilización desde cualquier ubicación.
 
-Este proyecto representa una solución integral para el registro de pacientes vacunados en un centro de salud, utilizando tecnologías web modernas, una base de datos PostgreSQL y herramientas como Flask, Docker y Google Cloud para su implementación y despliegue.
+Este proyecto representa una solución integral para el registro de pacientes vacunados en un centro de salud, utilizando tecnologías web modernas, una base de datos PostgreSQL y herramientas como Flask, Docker y Azure para su implementación y despliegue.
 
 ![Screenshot_2](https://media.ambito.com/p/a747977879f6f1b4b82065603f87fb57/adjuntos/239/imagenes/040/401/0040401067/1200x675/smart/covid-argjpg.jpg)
