@@ -19,3 +19,14 @@ def home ():
         cursor.close()
         return render_template("index.html", data=insertObject)
 
+def agregar_paciente():
+    nombre = request.form["nombre"]
+    segundo_nombre = request.form["segundo_nombre"]
+    apellido = request.form["apellido"]
+    nro_dni = request.form["nro_dni"]
+    fecha_nacimiento = request.form["fecha_nacimiento"]
+    dosis = request.form["dosis"]
+    fecha_aplicacion = request.form["fecha_aplicacion"]
+    centro_salud = request.form["centro_salud"]
+    nombre_vacuna = request.form["nombre_vacuna"]
+    lote_vacuna = request.form["lote_vacuna"]
