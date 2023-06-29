@@ -1,20 +1,32 @@
-#home
-app.route('/')(home)
+from flask import Flask
+from api import home, agregar_paciente, borrar_paciente, editar_paciente, listar_equipo, agregar_integrante_equipo, login
 
-#agregar paciente
-app.route('/agregar_paciente',methods=['POST'])(agregar_paciente)
+app = Flask(__name__)
 
-#borrar paciente
-app.route('/borrar_paciente/<int:id>',methods=['DELETE'])(borrar_paciente)
+# Ruta para la página de inicio
+@app.route('/')
 
-#editar paciente
-app.route('/editar_paciente/<int:id>',methods=['PUT'])(editar_paciente)
 
-#listar equipo
-app.route('/listar_equipo',methods=['GET'])(listar_equipo)
+# Ruta para agregar un paciente (POST)
+@app.route('/agregar_paciente', methods=['POST'])
 
-#agregar integrante equipo
-app.route('/agregar_integrante_equipo',methods=['POST'])(agregar_integrante_equipo)
 
-#login
-app.route('/login',methods=['POST'])(login)
+# Ruta para borrar un paciente (DELETE)
+@app.route('/borrar_paciente/<int:id>', methods=['DELETE'])
+
+
+# Ruta para editar un paciente (PUT)
+@app.route('/editar_paciente/<int:id>', methods=['PUT'])
+
+
+# Ruta para listar el equipo (GET)
+@app.route('/listar_equipo', methods=['GET'])
+
+
+# Ruta para agregar un integrante al equipo (POST)
+@app.route('/agregar_integrante_equipo', methods=['POST'])
+
+
+# Ruta para el inicio de sesión (POST)
+@app.route('/login', methods=['POST'])
+
