@@ -1,5 +1,5 @@
 from flask import Flask
-from api import home, agregar_paciente, borrar_paciente, editar_paciente, login
+from api import home, agregar_paciente, borrar_paciente, editar_paciente
 from teamController import listar_equipo, agregar_integrante_equipo
 import os
 from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity
@@ -41,7 +41,7 @@ app.route('/agregar_integrante_equipo', methods=['POST'])(agregar_integrante_equ
 
 
 # Ruta para el inicio de sesión (POST)
-app.route('/login', methods=['POST'])
+app.route('/login', methods=['POST'])(login)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
