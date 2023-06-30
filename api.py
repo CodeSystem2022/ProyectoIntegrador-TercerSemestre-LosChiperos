@@ -20,14 +20,9 @@ def agregar_paciente():
 
     except Exception as e:
         print(f'Ocurrió un erro al cargar los datos:{e}')
-
-
     finally:
         cursor.close()
         return redirect(url_for('home'))       
-
-
-
 
 def editar_paciente(id):
     nombre = request.form['nombre']
@@ -37,7 +32,7 @@ def editar_paciente(id):
     fecha_nacimiento = request.form['fecha_nacimiento']
     dosis = request.form['dosis']
     centro_salud = request.form['centro_salud']
-    
+
 def borrar_paciente(id):
     try:
         with db:
@@ -49,3 +44,24 @@ def borrar_paciente(id):
     finally:
         cursor.close()
         return redirect(url_for('home'))
+from flask import render_template, redirect, request, url_for
+from database import conexion as database
+
+
+def home ():
+    insertObject =  []
+    try:
+        with db:
+            with db.cursor() as cursor:
+                sentencia = "SELECT * FROM paciente"
+                cursor.execute(sentencia)
+                myresult = cursor.fetchall()
+
+                columName = [column[0] for column in cursor.description]
+                for record in myresult:
+                    insertObject.append(dict(zip(columName, record)))
+    except Exception as e:
+        print(f"Ocurrio un error: {e}")
+    finally:
+        cursor.close()
+        return render_template("index.html", data=insertObject)
