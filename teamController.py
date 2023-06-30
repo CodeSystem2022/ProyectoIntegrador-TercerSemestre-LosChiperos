@@ -26,22 +26,3 @@ def agregar_member():
     except Exception as e:
         print(f'Ocurrió un error al cargar los datos: {e}')
         return jsonify({"error": str(e)})
-
-@team.route('/listar_team')
-def listar_team():
-    insertObject = []
-    try:
-        with db:
-            with db.cursor() as cursor:
-                sentencia = 'SELECT * FROM team'
-                cursor.execute(sentencia)
-                myresult = cursor.fetchall()
-
-                columNames = [column[0] for column in cursor.description]
-                for record in myresult:
-                    insertObject.append(dict(zip(columNames, record)))
-
-                return jsonify(insertObject)
-    except Exception as e:
-        print(f'Ocurrió un error: {e}')
-        return jsonify({"error": str(e)})
