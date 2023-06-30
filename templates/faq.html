@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+
+
+
+    <body cz-shortcut-listen="true"><section>
+      <nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="/index.html" class="flex items-center">
+            <img src="/img/vacunarg.png" class="h-8 mr-3" alt="Flowbite Logo">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap "></span>
+          </a>
+          <div class="flex md:order-2">
+            <div class="flex md:order-2">
+              <a href="/login.html"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Ingresar</a>
+            </div>
+            <button data-collapse-toggle="navbar-sticky" type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+              <li>
+                <a href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
+                  aria-current="page">Inicio</a>
+              </li>
+              <li>
+                <a href="team.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0    ">Nosotros</a>
+              </li>
+              <li>
+                <a href="/faq.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0    ">Faq</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- 
+  fin de navbar
+ -->
+
+<style>
+  html {
+
+
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: 500; */
+  
+  }
+</style>
+    <div class="w-full bg-gray-50 bg-cover" style="background-image: url('https://img.freepik.com/vector-gratis/fondo-blanco-interrogacion-estilo-minimalista_1017-25235.jpg?w=740&t=st=1686580167~exp=1686580767~hmac=7a4362a5d6616e5c05288481e5da64eb82ceff3f7d1d5cc1d342f169091a0aa1')">
+
+        <!-- :TITLE & IMAGE -->
+        <div class="my-8 mx-auto max-w-4xl flex flex-col items-center">
+          <img src="/img/faq2.png" alt="Frequently Asked Questions" class="w-full h-full" />
+          <h2 class="text-center text-2xl sm:text-4xl text-teal-600 tracking-widest">Preguntas frecuentes</h2>
+        </div>
+      
+        <!-- :FAQ -->
+        <dl class="mx-auto mb-10 p-2 max-w-4xl flex flex-col items-center">
+          <!-- ::Accordion Panel -->
+          <div x-data="{ open: false }">
+            <!-- Question 1 -->
+            <div class="w-full border-b-2 border-sky-600 text-teal-600 hover:bg-amber-100 hover:text-teal-600" :class="{ 'bg-teal-600 text-amber-100': open }">
+              <button @click="open = !open" class="py-5 px-3 w-full flex justify-between items-center">
+                <span class="text-lg md:text-xl text-left font-semibold">¿Quién debería recibir la vacuna contra el COVID-19?
+
+
+
+                </span>
+                <svg x-bind:class="{ 'transform rotate-180 text-white': open }" class="flex-shrink-0 ml-2 w-7 h-7 text-sky-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Answer 1 -->
+            <div x-show="open" class="w-full text-base text-gray-500 px-4 pt-4 pb-2">
+              Las autoridades sanitarias recomiendan que todas las personas elegibles se vacunen contra el COVID-19. La elegibilidad puede variar dependiendo del país y la disponibilidad de la vacuna, pero en general, se está ampliando para incluir a la mayoría de los grupos de edad y condiciones de salud.           </div>
+          </div>
+      
+          <!-- Repeat the above structure for other FAQs -->
+          <div x-data="{ open: false }">
+            <!-- Question 1 -->
+            <div class="w-full border-b-2 border-sky-600 text-teal-600 hover:bg-amber-100 hover:text-teal-600" :class="{ 'bg-teal-600 text-amber-100': open }">
+              <button @click="open = !open" class="py-5 px-3 w-full flex justify-between items-center">
+                <span class="text-lg md:text-xl text-left font-semibold">¿Cómo funciona la vacuna contra el COVID-19?
+
+
+
+                </span>
+                <svg x-bind:class="{ 'transform rotate-180 text-white': open }" class="flex-shrink-0 ml-2 w-7 h-7 text-sky-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Answer 1 -->
+            <div x-show="open" class="w-full text-base text-gray-500 px-4 pt-4 pb-2">
+              Las vacunas contra el COVID-19 ayudan a nuestro cuerpo a desarrollar inmunidad contra el virus. La mayoría de las vacunas lo hacen al introducir una versión segura o inofensiva del virus (o una parte de él) en nuestro cuerpo, lo que hace que nuestro sistema inmunológico genere una respuesta. Si luego entramos en contacto con el virus real, nuestro sistema inmunológico está preparado para combatirlo.
+            </div>
+          </div>
+      
+          <div x-data="{ open: false }">
+            <!-- Question 1 -->
+            <div class="w-full border-b-2 border-sky-600 text-teal-600 hover:bg-amber-100 hover:text-teal-600" :class="{ 'bg-teal-600 text-amber-100': open }">
+              <button @click="open = !open" class="py-5 px-3 w-full flex justify-between items-center">
+                <span class="text-lg md:text-xl text-left font-semibold">¿Qué efectos secundarios puedo esperar después de la vacunación contra el COVID-19?
+
+
+                </span>
+                <svg x-bind:class="{ 'transform rotate-180 text-white': open }" class="flex-shrink-0 ml-2 w-7 h-7 text-sky-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Answer 1 -->
+            <div x-show="open" class="w-full text-base text-gray-500 px-4 pt-4 pb-2">
+              Los efectos secundarios más comunes de la vacuna contra el COVID-19 son generalmente leves y temporales. Estos pueden incluir dolor en el lugar de la inyección, cansancio, dolor de cabeza, dolor muscular, escalofríos, fiebre y náuseas. Estos efectos secundarios son una señal de que su cuerpo está construyendo protección contra el virus.
+            </div>
+          </div>
+      
+          <div x-data="{ open: false }">
+            <!-- Question 1 -->
+            <div class="w-full border-b-2 border-sky-600 text-teal-600 hover:bg-amber-100 hover:text-teal-600" :class="{ 'bg-teal-600 text-amber-100': open }">
+              <button @click="open = !open" class="py-5 px-3 w-full flex justify-between items-center">
+                <span class="text-lg md:text-xl text-left font-semibold">¿Puedo contraer COVID-19 de la vacuna?
+
+
+
+                </span>
+                <svg x-bind:class="{ 'transform rotate-180 text-white': open }" class="flex-shrink-0 ml-2 w-7 h-7 text-sky-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Answer 1 -->
+            <div x-show="open" class="w-full text-base text-gray-500 px-4 pt-4 pb-2">
+              No, no puedes contraer COVID-19 de ninguna de las vacunas aprobadas. Las vacunas contra el COVID-19 enseñan a nuestro sistema inmunológico cómo reconocer y luchar contra el virus, pero no contienen el virus vivo que causa el COVID-19.
+          </div>
+      
+
+          <div x-data="{ open: false }">
+            <!-- Question 1 -->
+            <div class="w-full border-b-2 border-sky-600 text-teal-600 hover:bg-amber-100 hover:text-teal-600":class="{ 'bg-teal-600 text-amber-100': open }">
+              <button @click="open = !open" class="py-5 px-3 w-full flex justify-between items-center">
+                <span class="text-lg md:text-xl text-left font-semibold">¿Cuántas dosis de la vacuna COVID-19 necesito recibir?
+
+                </span>
+                <svg x-bind:class="{ 'transform rotate-180 text-white': open }" class="flex-shrink-0 ml-2 w-7 h-7 text-sky-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Answer 1 -->
+            <div x-show="open" class="w-full text-base text-gray-500 px-4 pt-4 pb-2">
+              La mayoría de las vacunas contra el COVID-19 requieren dos dosis para ser efectivas, incluyendo Pfizer-BioNTech, Moderna y AstraZeneca. Sin embargo, hay algunas, como la de Johnson & Johnson, que requieren solo una dosis. Es importante asegurarte de obtener la misma vacuna para ambas dosis y seguir las directrices de tu proveedor de atención médica sobre cuándo recibir cada dosis.
+            </div>
+          </div>
+          <div x-data="{ open: false }">
+            <!-- Question 1 -->
+            <div class="w-full border-b-2 border-sky-600 text-teal-600 hover:bg-amber-100 hover:text-teal-600":class="{ 'bg-teal-600 text-amber-100': open }">
+              <button @click="open = !open" class="py-5 px-3 w-full flex justify-between items-center">
+                <span class="text-lg md:text-xl text-left font-semibold">¿Qué es la dosis de refuerzo de la vacuna COVID-19 y la necesito?
+
+
+                </span>
+                <svg x-bind:class="{ 'transform rotate-180 text-white': open }" class="flex-shrink-0 ml-2 w-7 h-7 text-sky-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Answer 1 -->
+            <div x-show="open" class="w-full text-base text-gray-500 px-4 pt-4 pb-2">
+              Una dosis de refuerzo es una dosis adicional de la vacuna que se da después de las dosis iniciales para ayudar a prolongar y reforzar la protección contra el virus. Algunos países están comenzando a administrar dosis de refuerzo a ciertos grupos, como los mayores y los inmunodeprimidos. Tu proveedor de atención médica puede aconsejarte sobre si necesitas una dosis de refuerzo en función de tu situación individual y las directrices locales.
+            </div>
+          </div>
+          
+        </dl>
+      
+      </div>
+
+</body>
+
+<br>
+<footer class="bg-blue-700  py-5 shadow text-white ">
+<a href="https://flowbite.com/" class="flex items-center mb-4 py-1 pb-15 sm:mb-0">
+  <img src="/img/vacunarg-sin-fuente.png" class="h-8 mr-3 p-2" alt="Vacunarg Logo" />
+  <span class="self-center text-2xl font-semibold font-sans items-center space-nowrap text-white">VACUNARG</span>
+</a>
+<div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 flex flex-col items-center">
+  <ul class="flex flex-wrap justify-center mb-6 text-xm font-medium text-gray-500 sm:mb-0 text-white">
+    <li class="mr-4 hover:underline md:mr-6">
+      <a href="index.html">Inicio</a>
+    </li>
+    <li class="mr-4 hover:underline md:mr-6">
+      <a href="/team.html">Nuestro equipo</a>
+    </li>
+    <li class="mr-4 hover:underline md:mr-6">
+      <a href="/faq.html">FAQ</a>
+    </li>
+    <li class="hover:underline">
+      <a href="#">Contacto</a>
+    </li>
+  </ul>
+  <hr class=" w-full my-6 border-gray-200 sm:mx-auto bg-blue-700 my-8 text-white" />
+  <span class="block text-1xl text-white sm:text-center">© 2023 <a href="/index.html" class="hover:underline">Vacunarg</a>. All Rights Reserved.</span>
+</div>
+</footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</html>
