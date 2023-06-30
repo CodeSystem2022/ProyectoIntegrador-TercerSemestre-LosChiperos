@@ -1,0 +1,121 @@
+<html lang="en" class="hydrated">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/tailwind.config.js">
+    <link rel="stylesheet" href="/style-login.css">
+    <link rel="icon" type="image/jpg" href="/img/icons/vacunarg-sin-fuente.ico"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+<body>
+
+    <!-- navbar -->
+    
+  <body cz-shortcut-listen="true"><section>
+    <nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="/index.html/" class="flex items-center">
+          <img src="/img/vacunarg.png" class="h-8 mr-3" alt="Flowbite Logo">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap "></span>
+      </a>
+      <div class="flex md:order-2">
+        <div class="flex md:order-2">
+          <a href="/login.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Ingresar</a>
+        </div>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0    ">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0    ">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0    ">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    
+  <style>
+    html,body,section {
+      font-family: "Montserrat", sans-serif;
+}
+  </style>
+
+<!-- fin navbar -->
+
+<div class="h-screen  md:flex"> 
+  <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-900 to-sky-500 i justify-around items-center hidden">
+    <div>
+      <h1 class="text-white font-bold text-4xl font-sans text-center">Vacunarg</h1>
+      <p class="text-white mt-1 text-center">Volvé a nuestro menu</p>
+      <a href="/index.html" class="block w-28 hover:bg-sky-200 hover:text-indigo-800 bg-indigo-800 text-white text-center mt-4 py-2 rounded-2xl font-bold mb-2">Volver</a>
+    </div>
+  </div>
+  <div class="flex md:w-1/2 justify-center text-center py-10 items-center bg-white">
+    <form class="bg-white">
+      <h1 class="text-2xl p-12 font-semibold items-center text-center"> Recupera tu contraseña</h1>
+      <p class="text-1xl font-normal text-gray-600 mb-7 text-center">Ingresa el mail para cambiar la contraseña</p>
+      <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+        </svg>
+        <input class="pl-2 outline-none border-none w-full" type="text" name="" id="" placeholder="Mail" />
+      </div>
+      <button type="submit" class="block w-full bg-red-600 hover:bg-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Enviar mail</button>
+    </form>
+  </div>
+</div>
+
+<!-- Inicio de Footer -->
+<br>
+<br>
+<footer class="bg-blue-700  py-5 shadow text-white ">
+<a href="https://flowbite.com/" class="flex items-center mb-4 py-1 pb-15 sm:mb-0">
+  <img src="/img/vacunarg-sin-fuente.png" class="h-8 mr-3 p-2" alt="Vacunarg Logo" />
+  <span class="self-center text-2xl font-semibold font-sans items-center space-nowrap text-white">VACUNARG</span>
+</a>
+<div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 flex flex-col items-center">
+  <ul class="flex flex-wrap justify-center mb-6 text-xm font-medium text-gray-500 sm:mb-0 text-white">
+    <li class="mr-4 hover:underline md:mr-6">
+      <a href="index.html">Inicio</a>
+    </li>
+    <li class="mr-4 hover:underline md:mr-6">
+      <a href="/team.html">Nosotros</a>
+    </li>
+    <li class="mr-4 hover:underline md:mr-6">
+      <a href="/faq.html">FAQ</a>
+    </li>
+
+  </ul>
+  <hr class=" w-full my-6 border-gray-200 sm:mx-auto bg-blue-700 my-8 text-white" />
+  <span class="block text-1xl text-white sm:text-center">© 2023 <a href="/index.html" class="hover:underline">Vacunarg</a>. All Rights Reserved.</span>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+<script src='./js/password.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+</body>
+
+</html>
