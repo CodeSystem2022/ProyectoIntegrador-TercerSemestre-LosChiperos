@@ -1,0 +1,90 @@
+[
+    {
+        "apellido": "Araya",
+        "description": "Fullstack Developer React Nodejs MongoDB",
+        "github": "https://github.com/gonzalo991",
+        "id": 1,
+        "imgurl": "../img/team/gonzalo.jpeg",
+        "linkedin": "https://www.linkedin.com/in/gonzalo-araya-416a6520b/",
+        "nombre": "Gonzalo",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/gonzalo"
+    },
+    {
+        "apellido": "Alderete",
+        "description": "Backend Developer Api Rest  MySQL JAVA C# Angular",
+        "github": "https://github.com/catastones",
+        "id": 0,
+        "imgurl": "../img/team/Cristian.png",
+        "linkedin": "https://www.linkedin.com/in/calderete/",
+        "nombre": "Cristian",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/cristian"
+    },
+    {
+        "apellido": "Schallmoser",
+        "description": "FullStack Developer UX-UI React HTML CSS",
+        "github": "https://github.com/SchallmoserJuan",
+        "id": 2,
+        "imgurl": "../img/team/juan.jpeg",
+        "linkedin": "https://www.linkedin.com/in/juanschallmoser/",
+        "nombre": "Juan",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/SchallmoserJuan"
+    },
+    {
+        "apellido": "Gómez Aranda",
+        "description": "Frontend Developer React Html CSS JavaScript",
+        "github": "https://github.com/Chelito2014",
+        "id": 3,
+        "imgurl": "../img/team/agustin.jpeg",
+        "linkedin": "https://www.linkedin.com/in/agustin-gomez-aranda/",
+        "nombre": "Agustín",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/cristian"
+    },
+    {
+        "apellido": "Mercado",
+        "description": "Frontend Developer React Html JavaScript",
+        "github": "https://github.com/dav1dM3rcado",
+        "id": 5,
+        "imgurl": "../img/team/david.jpeg",
+        "linkedin": "https://www.linkedin.com/in/david-mercado-510721176/",
+        "nombre": "David",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/DeividMercad2?t=D3KzeA3BNF1L29VZQFY8Kg&s=08"
+    },
+    {
+        "apellido": "Valdez",
+        "description": "SysAdmin especializado en desarrollo web",
+        "github": "https://github.com/Leonardo-Valdez",
+        "id": 7,
+        "imgurl": "../img/team/leonardo.jpeg",
+        "linkedin": "https://www.linkedin.com/in/leonardo-javier-valdez-19106326a/",
+        "nombre": "Leonardo",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/"
+    },
+    {
+        "apellido": "Pertus",
+        "description": "WEB Developer React Nodejs MongoDB",
+        "github": "https://github.com/Angelopertus",
+        "id": 6,
+        "imgurl": "../img/team/angelo.jpeg",
+        "linkedin": "https://www.linkedin.com/in/angelo-pertus-234795201/",
+        "nombre": "Angelo",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/"
+    },
+    {
+        "apellido": "Zelarayan",
+        "description": "DevOps especializado en infraestructura cloud",
+        "github": "https://github.com/NicolasZelarayan",
+        "id": 4,
+        "imgurl": "../img/team/nicolas.jpeg",
+        "linkedin": "https://www.linkedin.com/in/fernando-nicolas-zelarayan/",
+        "nombre": "Nicolás",
+        "role": "Técnico en Programción",
+        "twitter": "https://twitter.com/zelarayanFN?t=oaYtXi2vCvVboZCf51hahQ&s=09"
+    }
+]
