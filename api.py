@@ -20,6 +20,7 @@ def editar_paciente(id):
     finally:
         cursor.close()
         return redirect(url_for('home'))
+    
 def agregar_paciente():
      nombre = request.form["nombre"]
      segundo_nombre = request.form["segundo_nombre"]
