@@ -1,3 +1,4 @@
+from database import conexion as db
 def editar_paciente(id):
     nombre = request.form['nombre']
     segundo_nombre = request.form['segundo_nombre']
