@@ -1,6 +1,10 @@
 # *Equipo Los Chiperos - Tecnicatura Universitaria en Programación*
 ## Proyecto Integrador - Tercer Semestre  
 
+### Link del proyecto desplegado en la nube : *https://app.vacunarg.site/*
+
+#### Video explicación del proyecto: https://drive.google.com/file/d/1_SvphbwL1HLcIWjZgCdcUkVBCtrFoxdC/view?usp=sharing
+
 ![Screenshot_1](https://www.digitalbizmagazine.com/wp-content/uploads/2022/01/DB47_Mitek.jpg)
 
 
@@ -14,6 +18,7 @@
 - Angelo Martín Pertus
 - Agustín Aranda
 - Leonardo Valdéz
+
 
 ###                       *Descripción general del proyecto*:
 
