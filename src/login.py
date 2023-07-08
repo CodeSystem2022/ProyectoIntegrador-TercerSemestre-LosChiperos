@@ -4,7 +4,7 @@ from database import conexion as db
 
 # Ruta para el formulario de inicio de sesión
 def login():
-    userDict = {}
+    #userDict = {}
     if request.method == 'POST':
         # Verificar las credenciales de inicio de sesión
         username = request.form['username']

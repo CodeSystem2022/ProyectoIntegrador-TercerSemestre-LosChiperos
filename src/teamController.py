@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from database import conexion as db
 
 def agregar_integrante_equipo():
@@ -18,13 +18,13 @@ def agregar_integrante_equipo():
                 sentencia = 'INSERT INTO team (nombre,apellido,role,description,imgurl,twitter, linkedin, github) values (%s,%s,%s,%s,%s,%s,%s,%s)'
                 valores = (nombre, apellido, role, description, imgurl, twitter, linkedin, github)
                 cursor.execute(sentencia, valores)
-
+                render_template('faq.html')
                 return jsonify({"success": "Miembro del equipo agregado correctamente."})
     except Exception as e:
         print(f'Ocurrió un error al cargar los datos: {e}')
+        render_template('404.html')
         return jsonify({"error": str(e)})
     
-
 def listar_equipo(): # Definicion de la función
     insertObject = [] # Lista para almacenar los resultados de la consulta
     try:

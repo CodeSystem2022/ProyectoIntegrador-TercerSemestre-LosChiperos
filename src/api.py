@@ -1,3 +1,4 @@
+from flask import  render_template, request, redirect, url_for
 from database import conexion as db
 
 def agregar_paciente():
@@ -7,6 +8,7 @@ def agregar_paciente():
     nro_dni = request.form["nro_dni"]
     fecha_nacimiento = request.form["fecha_nacimiento"]
     dosis = request.form["dosis"]
+    fecha_aplicacion = request.form["fecha_aplicacion"]
     centro_salud = request.form["fecha_aplicacion"]
     centro_salud = request.form["centro_salud"]
     nombre_vacuna = request.form["nombre_vacuna"]
